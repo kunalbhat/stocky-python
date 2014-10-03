@@ -1,4 +1,5 @@
-stocky-python
-=============
+WIP - Stocky (python)
+=====================
 
-Stocky in python
+Uses [ystockquote](https://github.com/cgoldberg/ystockquote) to fetch
+market data.
