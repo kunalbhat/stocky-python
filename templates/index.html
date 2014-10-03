@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stocky</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel='stylesheet'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='underscore.js') }}"></script>
+  </head>
+  <body>
+    <nav>
+    </nav>
+    <section>
+      <ul id='stocks'></ul>
+    </section>
+    <script type='text/javascript'>
+
+      if (savedData = localStorage.getItem('stocks')) {
+        window.stocks = savedData.split(',');
+      } else {
+        window.stocks = ['GOOG', 'AAPL', 'YHOO'];
+      }
+
+    </script>
+  </body>
+</html>
+
